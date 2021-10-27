@@ -1,7 +1,7 @@
 function matchImgId(itemId, a){
     var condition = false;
     var b = 0;
-    while(condition == false || b > 3) {
+    while(condition == false && b < 3) {
         if(itemId.includes.Asset[b].sys.id == itemId.items[a].fields.imagen.sys.id){
             condition = true;
             var posImg = b;
